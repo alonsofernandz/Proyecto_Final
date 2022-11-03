@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>Alonso Fernández - Desarrollador Web</title>
+</head>
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1><h1></h1></h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#especializacion" onclick="seleccionar(this)">ESPECIALIZACION</a></li>
+                            <li><a href="#proyectos" onclick="seleccionar(this)">PROYECTOS</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTAME</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida"></p>
+                <h2>Alonso Fernández<br> Desarrollador Web - Full Stack</h2>
+                <p class="descripcion">Ahora, conocerás más sobre mi vida personal y profesional así que.. </p>
+                <a href="#sobremi">VAMOS!</a>
+            </div>
+        </div>
+    </section>
+    <section id="sobremi">
+        
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Alonso Fernández </h2>
+            <h3>Desarrollador Web - Full Stack</h3>
+            <p>Hola, como pudiste leer arriba soy Alonso Fernández, soy Desarrollador Web - Full Stack. Tengo 20 años,
+                vivo en Santa Anita, vivo con mi madre, hermana y mi sobrina de 6 años. En mis tiempos libres me gusta ver
+                series de Netflix, jugar a League of Legends, Valorant, Csgo y Left 4 Dead 2.
+            </p>
+            <p>Me encuentro estudiando la carrera de Diseño y Desarrollo de software en el instituto <b>Tecsup</b>, me encuentro
+            en 6to ciclo pero por temas personales lo dejé hace 3 meses. Sin más que agregar espero te gusten mis skills en la Programación y aquí abajo podrás encontrar mi CV.</p>
+            <a href="Fernandez_Jave_Juan.docx" download="cv_alonso_fernandez">Descargar CV</a>
+        </div>
+    </section>
+    <section id="especializacion">
+        <h3 class="titulo-seccion">MIS ESPECIALIDADES</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de Sitios Web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Front-end</li>
+                    <li>Back-end</li>
+                </ul>
+                <p>Tengo conocimientos solidos en HTML5, CSS3 Y JavaScript para la parte de Front-end de las paginas web.</p><br>
+                <p>También, tengo conocimientos en PHP y PYTHON para la parte de Back-end de las paginas web.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
+                <h4>Programación Orientada a Objetos</h4>
+                <hr>
+                
+                <p>Conocimientos solidos en JAVA con relacion a la Programación Orientada a Objetos</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Comunicacion Eficaz</h4>
+                <hr>
+                <p>Me considero una persona que encaja muy bien con los demás, puedo llegar a dar confianza para temas de trabajo e incluso, temas personales</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Alojamiento en la Nube</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Azure</li>
+                    <li>AWS</li>
+                </ul>
+                <p>La mayoría de proyecto personales que realizo, suelo tenerlos en hostings como Azure y AWS ya que, ambos brindan seguridad a nivel general.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-palette"></i></span>
+                <h4>Edicion de Videos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Filmora</li>
+                </ul>
+                <p>No me considero un especializta en esta area pero, se lo suficiente como para poder realizar una buena edicion de video.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Base de Datos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>SQL</li>
+                    <li>MONGODB</li>
+                </ul>
+                <p>Conocimientos sólidos en la administracion, creacion y alojamiento en la nube de Bases de Datos relacional y no relacional.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="contenedor-skills" id="skills">
+        <h3>HABILIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Html & Css</p>
+                <span class="porcentaje">95%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Javascript</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Bases de Datos</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="bd"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Edición de Videos</p>
+                <span class="porcentaje">85%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="ps"></div>
+            </div>
+        </div>
+    </div>
+
+    <section id="proyectos">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.jpg" alt="">
+                <div class="info">
+                    <h4>Diseño Web</h4>
+                    <p>Front - End</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.jpg" alt="">
+                <div class="info">
+                    <h4>Diseño web</h4>
+                    <p>Back - End</p>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.jpg" alt="">
+                <div class="info">
+                    <h4>Página web con Base de Datos</h4>
+                    <p>Full - Stack</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contactanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Hecho por Alonso Fernández - 2022</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
